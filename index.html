@@ -24,6 +24,10 @@
         function bildeParādās(){
             if (!klik){
                 b.innerHTML="<img src=dog.jpg>";
+                klik=true;
+                document.getElementById("bilde").onclick=function(){
+                    bildeParādās();
+                }
             }
         }
         function nokavēt(){
